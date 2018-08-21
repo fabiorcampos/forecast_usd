@@ -1,5 +1,6 @@
 ### Load Library
 library(dplyr)
+library(fpp2)
 
 ### Data Load
 url_venda = ("http://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=csv")
