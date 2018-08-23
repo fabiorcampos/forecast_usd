@@ -1,12 +1,12 @@
 ### Arima Model
-train = ts(df$valor_venda[5823:5984])
-test = ts(df$valor_venda[5985:6055])
+train = ts(df$valor_venda[5827:5988])
+test = ts(df$valor_venda[5989:6059])
 
 ### autoarima
 autoarim = auto.arima(train)
 
 ### Plot autorima method
-plot(forecast(autoarim), h = 10)
+autoplot(forecast(autoarim), h = 10)
 
 ### Create a dataframe comparison the test set with forecasting
 forecast = data.frame(forecast(autoarim, h=71))
