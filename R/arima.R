@@ -1,9 +1,9 @@
 ### Arima Model
-train = ts(df$valor_venda[5827:5988])
-test = ts(df$valor_venda[5989:6059])
+train = ts(df$valor_venda[5835:5996])
+test = ts(df$valor_venda[5997:6067])
 
 ### autoarima
-autoarim = auto.arima(train)
+autoarim = auto.arima(test)
 
 ### Plot autorima method
 autoplot(forecast(autoarim), h = 10)
